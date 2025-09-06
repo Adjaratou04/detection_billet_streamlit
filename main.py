@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import requests
 
 # URL de l'API FastAPI
-API_URL = "https://detection-fastapi-5.onrender.com/docs#/default/predict_csv_predict_csv_post"
+API_URL = "API_URL = "https://detection-fastapi-5.onrender.com/predict_csv"
 # Config
 st.set_page_config(page_title="Analyse Billets", page_icon="💰", layout="wide")
 
