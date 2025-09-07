@@ -10,7 +10,12 @@ expected_columns = ["diagonal", "height_left", "height_right", "margin_low", "ma
 
 app = FastAPI(title="Détection de faux billets")
 
-#  Schéma attendu pour JSON
+# ✅ Route racine pour Render (Health Check)
+@app.get("/")
+def home():
+    return {"message": "API de détection de faux billets 🚀 en ligne"}
+
+# Schéma attendu pour JSON
 class BilletFeatures(BaseModel):
     diagonal: float
     height_left: float
