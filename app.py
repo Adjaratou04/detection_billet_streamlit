@@ -13,7 +13,7 @@ app = FastAPI(title="Détection de faux billets")
 # ✅ Route racine pour Render (Health Check)
 @app.get("/")
 def home():
-    return {"message": "API de détection de faux billets 🚀 en ligne"}
+    return {"message": "API de détection de faux billets  en ligne"}
 
 # Schéma attendu pour JSON
 class BilletFeatures(BaseModel):
